@@ -16,9 +16,6 @@
     body{
         margin: 0;
     }
-    .saw {
-        color:gray;
-    }
     a {
         color:black;
         text-decoration: none;
@@ -37,14 +34,25 @@
         padding: 20px;
     }
     #grid{
-        display: grid;
-        grid-template-columns: 150px 1fr;
+      display: grid;
+      grid-template-columns: 150px 1fr;
     }
     #grid ol{
-        padding-left: 33px;
+      padding-left:33px;
     }
     #grid #article{
-        padding-left: 25px;
+      padding-left:25px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+        }
+        ol{
+            border-right: none;
+        }    
+        h1{
+            border-bottom: none;
+        }
     }
     </style>
 </head>
